@@ -1,0 +1,5 @@
+= Probationem - Generator fuer Asubildungsnachweise
+
+Dieses Programm soll aus einem vereinheitlichtem Text-Eingabeformat Ausbildungsnachweise generieren.
+
+Es soll auf Textdateien aufgerufen werden koennen wie auch Standard-Input verstehen.
