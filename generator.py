@@ -14,6 +14,9 @@ header_origin_y = 19
 header_second_line = 34
 left_edge = 18
 right_edge = 190
+box_start = 44
+text_in_box_location = left_edge + 1
+
 
 pdf = FPDF()
 pdf.add_page()
@@ -42,6 +45,9 @@ pdf.text(left_edge + 70, header_second_line + 4, 'Ausbildungswoche vom')
 pdf.text(left_edge + 103, header_second_line + 4, 'bis')
 pdf.text(right_edge - 18.9, header_second_line + 4, 'Ausbildungsjahr')
 
-pdf.rect(left_edge, 45, right_edge - left_edge, 175)
+pdf.rect(left_edge, box_start, right_edge - left_edge, 7)
+pdf.text(text_in_box_location, box_start + 1, 'Betriebliche T')
+
+pdf.rect(left_edge, box_start, right_edge - left_edge, 175)
 
 pdf.output('tuto1.pdf', 'F')
