@@ -1,16 +1,27 @@
+#!/usr/bin/env python
 import datetime
+import toml
+import sys
 
 from fpdf import FPDF
 
-name = 'Julius Dehner'
-department = 'Kundensysteme'
-certificate_count = 0
-date = datetime.date(2018, 5, 13)
+
+def format_date(date: datetime.date):
+    return f'{str(date.day).zfill(2)}.{str(date.month).zfill(2)}.{date.year}'
+
+
+data = toml.load(sys.argv[1])
+name = data["name"]
+department = data["department"]
+certificate_count = data["certificate_count"]
+date = datetime.datetime.strptime(data["start_date"], '%d.%m.%y').date()
 date_endofweek = date + datetime.timedelta(days=4)
-year = 1
-corporate_activities = ['- Probationem enwickeln', '- VIM lernen', '- Liebe machen']
-teachings = ['- ISO-OSI-Modell erklärung', '- Objektorientierung']
-school_activities = ['Englisch: Mal was sinnvolles ', 'Vernetzte Systeme: Mehr Unsinn']
+date = format_date(date)
+date_endofweek = format_date(date_endofweek)
+year = data["apprenticeship_year"]
+corporate_activities = data["corporate_activities"]
+teachings = data["teachings"]
+school_activities = data["school_activities"]
 
 header_origin_x = 90
 header_origin_y = 19
@@ -116,4 +127,4 @@ pdf.set_font('Helvetica', 'B', size=11.5)
 pdf.text(left_edge + 11, sign_box_end - 1, 'Auszubildende/-r')
 pdf.text(left_edge + box_spacing + 15, sign_box_end - 1, 'Ausbilder/-in')
 pdf.text(left_edge + box_spacing * 2 + 4, sign_box_end - 1, 'Gesetzliche/-r Vertreter/-in')
-pdf.output('tuto1.pdf', 'F')
+pdf.output(f'Ausbilungsnachweis_{str(certificate_count).zfill(3)}.pdf', 'F')

@@ -1,0 +1,21 @@
+name = "Julius Dehner"
+department = "Kundensysteme"
+certificate_count = 0
+start_date = '30.04.19'
+apprenticeship_year = 1
+
+corporate_activities = [
+		"- Probationem enwickeln",
+		"- VIM lernen",
+		"- Liebe machen"
+]
+
+teachings = [
+		"- ISO-OSI-Modell erklärung",
+		"- Objektorientierung"
+]
+
+school_activities = [
+		'Englisch: Mal was sinnvolles ',
+		'Vernetzte Systeme: Mehr Unsinn'
+]
