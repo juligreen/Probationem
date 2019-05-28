@@ -19,7 +19,8 @@ Um diese schnell zu erstellen empfehle ich VSCode- oder Vim-snippets.
 
 Die toml-Datei muss folgende Daten enthalten:
 
----
+.input.toml
+----
 name = ""
 department = ""
 certificate_count = 0
@@ -41,4 +42,4 @@ school_activities = [
 		"",
 		""
 ]
----
+----
