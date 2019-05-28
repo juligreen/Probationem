@@ -1,5 +1,7 @@
-= Probationem - Generator fuer Asubildungsnachweise
+= Probationem - Generator fuer Ausbildungsnachweise
+Julius Dehner <julius.dehner@gmail.com>
+:imagesdir: images/
+:notitle:
+:stem:
 
-Dieses Programm soll aus einem vereinheitlichtem Text-Eingabeformat Ausbildungsnachweise generieren.
-
-Es soll auf Textdateien aufgerufen werden koennen wie auch Standard-Input verstehen.
+==
