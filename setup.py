@@ -15,10 +15,13 @@ setup(
         'toml',
     ],
     classifiers=[
-        'Development Status :: 2 - Beta',
-        'Intended Audience :: Enduser',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
+    entry_points={
+        "console_scripts": [
+            "probationem=Probationem.main:probationem",
+        ]
+    },
 )
