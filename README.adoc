@@ -4,4 +4,41 @@ Julius Dehner <julius.dehner@gmail.com>
 :notitle:
 :stem:
 
-==
+== Benutzung
+
+* Python/Pip installieren
+* Probationem installieren: `pip install Probationem`
+* toml-Eingabedatei erstellen
+* pdf erstellen: `probationem input.toml`
+
+== toml-Eingabe
+
+Zur Benutzung dieses Tools muessen die Eingabedaten in einer toml datei vorliegen.
+
+Um diese schnell zu erstellen empfehle ich VSCode- oder Vim-snippets.
+
+Die toml-Datei muss folgende Daten enthalten:
+
+---
+name = ""
+department = ""
+certificate_count = 0
+start_date = ""
+apprenticeship_year = 1
+
+corporate_activities = [
+		"",
+		"",
+		""
+]
+
+teachings = [
+		"",
+		""
+]
+
+school_activities = [
+		"",
+		""
+]
+---
