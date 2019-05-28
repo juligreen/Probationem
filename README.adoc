@@ -28,18 +28,18 @@ start_date = ""
 apprenticeship_year = 1
 
 corporate_activities = [
-		"",
-		"",
-		""
+	"",
+	"",
+	""
 ]
 
 teachings = [
-		"",
-		""
+	"",
+	""
 ]
 
 school_activities = [
-		"",
-		""
+	"",
+	""
 ]
 ----
