@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
     name='Probationem',
     packages=['Probationem'],
-    version='1.0.2',
+    version='1.0.3',
     license='MIT',
     description='Generator fuer Ausbildungsnachweise (Fachinformatiker)',
     author='Julius Dehner',
