@@ -4,12 +4,25 @@ Julius Dehner <julius.dehner@gmail.com>
 :notitle:
 :stem:
 
+== Ergebnis
+
+Ein Beispiel PDF, das von Probationem generiert wurde:
+image::example_output.png[]
+
+Der hierfür benötigte input kann hier eingesehen werden:
+
+include::exampleinput.toml[]
+
 == Benutzung
 
 * Python/Pip installieren
 * Probationem installieren: `pip install Probationem`
 * toml-Eingabedatei erstellen
 * pdf erstellen: `probationem input.toml`
+* Alternativ liest Probationem auch von stdin
+** Bsp: `cat input.toml | probationem`
+
+
 
 == toml-Eingabe
 
